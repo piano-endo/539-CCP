@@ -27,7 +27,7 @@ html h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-html p {
+html p, div #likes-pets {
     font-size: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -110,7 +110,7 @@ html p {
 }
 
 @media (min-width: 992px) {
-    html {
+    html, span {
         font-size: 15px;
     }
 
@@ -118,16 +118,22 @@ html p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+    }
 }
 
 @media (min-width: 1200px) {
-    html {
+    html, span {
         font-size: 16px;
     }
 }
 
 @media (min-width: 2000px) {
-    html {
+    html, span {
         font-size: 18px;
     }
 }
@@ -142,29 +148,21 @@ header ul {
 header nav {
     padding-top: 50px;
     padding-bottom: 25px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px; */
 }
 
-nav ul li {
+nav ul li, div span {
     padding: 15px 20px;
+    font-size: 1.15rem;
 }
 
 a:visited{
     color: black;
 }
 
-/* ul .active {
-    letter-spacing: 0.1rem;
-    background: #C38D9E;
-    text-transform: uppercase;
-    color:azure;
-} */
-
 .active a {
     border-bottom: 2px dashed #b05572;
     padding-bottom: 3px;
+    text-transform: uppercase;
 }
 
 header nav a {
