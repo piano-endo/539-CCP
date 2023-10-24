@@ -27,7 +27,7 @@ html h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-html p, div #likes-pets {
+html p, div .likes-pets {
     font-size: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -58,50 +58,50 @@ html p, div #likes-pets {
         font-size: 14px;
     }
 
-    div #gallery {
+    div .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    div #gallery-food {
+    div .gallery-food {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    div #gallery-travel {
+    div .gallery-travel {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 1rem;
     }
 
-    #gallery-travel figure:first-child {
+    .gallery-travel figure:first-child {
         grid-column-start: 2;
         grid-column-end: span 2;
         grid-row: 1 span 1 ;
     }
 
-    #gallery-travel figure:nth-child(2) {
+    .gallery-travel figure:nth-child(2) {
         grid-column-start: 4;
         grid-column-end: span 2;
         grid-row: 1 span 1;
     }
 
-    #main #gallery-travel figure:nth-child(3) {
+    #main .gallery-travel figure:nth-child(3) {
         grid-column-start: 1;
         grid-column-end: span 2;
         grid-row-start: 2;
         grid-row-end: span 1;
     }
 
-    #main #gallery-travel figure:nth-child(4) {
+    #main .gallery-travel figure:nth-child(4) {
         grid-column-start: 3;
         grid-column-end: span 2;
         grid-row-start: 2;
         grid-row-end: span 1;
     }
 
-    #main #gallery-travel figure:nth-child(5) {
+    #main .gallery-travel figure:nth-child(5) {
         grid-column-start: 5;
         grid-column-end: span 2;
         grid-row-start: 2;
@@ -114,7 +114,7 @@ html p, div #likes-pets {
         font-size: 15px;
     }
 
-    div #gallery {
+    div .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -196,18 +196,18 @@ div img {
     justify-self: center;
 }
 
-#recipe-ingredients ul li, #recipe-steps ol li {
+.recipe-ingredients ul li, .recipe-steps ol li {
     letter-spacing: 0.1rem;
     line-height: 2rem;
     margin: 1rem;
 }
 
-#gallery-travel {
+.gallery-travel {
     display: grid;
     justify-content: center;
 }
 
-#gallery-travel figure {
+.gallery-travel figure {
     display: grid;
     justify-content: center;
 }
